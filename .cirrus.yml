@@ -10,8 +10,10 @@ task:
     cpu: 8
     memory: 32G
   chmod_script:
-   - sudo chmod +x *
-     download_script:
+    - sudo chmod +x *
+  # telegram_script:
+    # - ./telegram
+  download_script:
     - ./download_ccache
   sync_script:
     - ./sync
