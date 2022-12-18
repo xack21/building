@@ -1,6 +1,5 @@
 env:
     CIRRUS_CLONE_DEPTH: 1
-    
  env_script:
     - env
   show_script:
