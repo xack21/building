@@ -3,7 +3,7 @@ env:
     CIRRUS_WORKING_DIR: "/tmp/ci"
 
 task:
-  name: Build_Upload
+  name: Build
   timeout_in: 2h
   container:
     image: apon77/aosp:latest
