@@ -4,7 +4,7 @@ env:
 
 task:
   name: Build_Upload
-  timeout_in: 2h chmod_script:
+  timeout_in: 2h
   container:
     image: apon77/aosp:latest
     cpu: 8
