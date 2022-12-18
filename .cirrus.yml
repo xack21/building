@@ -6,7 +6,7 @@ task:
   name: Build
   timeout_in: 2h
   container:
-    image: apon77:aosp:cirrus
+    image: apon77/aosp:cirrus
     cpu: 8
     memory: 32G
   chmod_script:
