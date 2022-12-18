@@ -1,0 +1,23 @@
+env:
+    CIRRUS_CLONE_DEPTH: 1
+    CIRRUS_WORKING_DIR: "/tmp/ci"
+
+task:
+  name: Build_Upload
+  timeout_in: 2h chmod_script:
+  container:
+    image: apon77/aosp:latest
+    cpu: 8
+    memory: 32G
+  chmod_script:
+   - sudo chmod +x *
+     download_script:
+    - ./download_ccache
+  sync_script:
+    - ./sync
+  monitor_background_script:
+    - ./monitor
+  build_script:
+    - ./build
+  upload_ccache_script:
+    - ./upload
